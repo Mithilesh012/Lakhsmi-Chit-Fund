@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inter-bank.css">
+    <title>Side Navigation Bar</title>
+</head>
+<body>
+    <div class="sidenav">
+        <div class="sidenav-header">
+            <h1>My Account</h1>
+        </div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Account details</a></li>
+          
+        </ul>
+        <div class="sidenav-header2">
+            <h1>Fund Transfer</h1>
+        </div>
+        <ul>
+            <li><a href="#">Inter-Bank</a></li>
+            <li><a href="#">Other Banks</a></li>
+            <li><a href="#">Transfer History </a></li>
+            
+        </ul>
+        <p>&copy; 2023 YourWebsite. All rights reserved.</p>
+    </div>
+    <div class="container" >
+        <h2>Bank Transaction</h2>
+        <form action="process_transaction.php" method="post">
+          <div class="txt_field">
+             <input type="text"  name="accountNumber" required>
+             <span></span>
+                      <label>Account Number</label>
+          </div>
+          <div class="txt_field">
+            <input type="text"  name="accountNumber" required>
+            <span></span>
+            <label>Comform Acc. Num.</label>
+         </div>
+         <div class="txt_field">
+          <input type="text"  name="IFSC_CODE" required>
+          <span></span>
+           <label>IFSC_CODE</label>
+        </div>
+         <!--<div class="txt_field">
+            <input type="text"  name="transactionAmount" required>
+            <span></span>
+            <label>Transaction Amount</label>
+         </div>-->
+         <div class="txt_field">
+          <input type="text"  name="recipientAccount" required>
+          <span></span>
+           <label>Recipient / hOLDER  Account</label>
+       </div>
+       <div class="txt_field">
+        <input type="password"  name="AccountPassword" required>
+        <span></span>
+        <label>Account Password</label>
+      </div>
+          <button type="submit"> <a href="pay-amount.html">Pay Amount</a></button>
+        </form>
+      </div>
+      <div class="space-between footer-container">
+        
+      </div>
+
+</body>
+</html>

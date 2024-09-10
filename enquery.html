@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lakshmi Chit Fund</title>
+    <link rel="stylesheet" href="enquery.css" />
+    <script
+      src="https://kit.fontawesome.com/b0ec5ec915.js"
+      crossorigin="anonymous"
+    ></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+label{
+    color: #ffffff;
+    font-family:sans-serif;
+}
+h2{
+    text-align: center;
+    color: #ffffff;
+    font-family:sans-serif;
+}
+
+/* logo stylings */
+img{
+    border-radius: 50%;                 
+    float:right;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    
+}
+.container a{
+    transform: scale(15);
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4c8bf8;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ee2b15;
+}
+/* background image stylings */
+.container {
+  border-radius: 5px;
+  background-image:url("devu.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  
+  
+}
+
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+          <img src="image.png" alt="Logo" />
+          <h1>Lakshmi Chit Fund</h1>
+        </div>
+        <div class="header-buttons">
+          <a href="header.html">Home</a>
+          <a href="#">About Us</a>
+          <a href="enquery.html">Enquiry</a>
+          <a href="login page.php">login </a>
+        </div>
+      </div>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <h2>___Enquiry Form</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name">
+            </td>
+            <td>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+            </td>
+            <td>
+                <label for="Account no">Account Number</label>
+                <input type="text"id="Account no"name="Account no"placeholder="Enter your Account Number">
+            </td>
+        </tr>
+        <!-- logo outside of table row -->
+        <a href="header.html"><img src="image.png" alt="logo"height="150px"></a> 
+        <tr>
+            <td>
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="Address" placeholder="Mention your Address">
+            </td>
+            <td>
+                <label for="State">State</label>
+      <select id="state" name="state">
+      <option disabled>Select the State</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chattisgarh">Chattisgarh</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujrat">Gujrat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himanchal Pradesh">Himanchal Pradesh</option>
+      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh	</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu	">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttar Pradesh	">Uttar Pradesh	</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="West Bengal">West Bengal</option>
+      
+</select>
+
+            </td>
+            <td>
+                <label for="Pincode">Pincode</label><br>
+                <input type="number" id="Pincode" name="Pincode" placeholder="Area Pin">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Phone">Phone number</label>
+                <input type="text"id="Phone"name="Phone"placeholder="Mobile Number">
+            </td>
+            <td>
+                <label for="email">Email Id</label><br>
+                <input type="email"id="email"name="email"placeholder="Your Email id">
+            </td>
+        </tr>
+    </table>
+
+    
+
+        <label for="subject">Subject</label>
+    <textarea id="subject" name="subject"placeholder="Summary of Description"></textarea>
+
+    <label for="Description">Description</label>
+    <textarea id="subject" name="subject" placeholder="Explain Your Query in Detail..." style="height:200px"></textarea>
+    <input type="checkbox"id="policy">
+    <label for="policy">I'd like to recieve more information about LAKSHMI CHIT FUND;I understand <br>and agree to the terms and conditions.</label>
+    <br>
+    <br>
+    <input type="submit" value="Submit" name="button">
+
+    
+  </form>
+</div>
+
+<div class="footer">
+    <div class="footer2">
+      <div class="footer-content1">
+        <h1>Contact:</h1>
+        <div class="footer-info">
+          <i class="fa-solid fa-phone"></i>
+          <h2>+919823745497</h2>
+        </div>
+        <div class="footer-info">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2>GP road,Khargar</h2>
+        </div>
+        <div class="footer-info">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#"><h2>chitfund@gmail.com</h2></a>
+        </div>
+      </div>
+      <div class="footer-content2">
+        <h1>About Company</h1>
+        <p>
+          Our company aims to fullfil normal people to build their own life live with ease <br>
+            by giving multiple loan options and other services like account managing,etc. <br>
+            considering all the competition in market we provide you with best returns. <br>
+            other than returns we offer special offers daily stay updated to grab it, <br>
+            and most of them always gets the reward so try our account today to get and amazing experience.  <br>
+            By joining today you will get and free access card to reedeem it in future , <br>
+           and stay tuned for exclusive offers in future. <br>
+        </p>
+      </div>
+    </div>
+
+    <p>&copy; 2023 YourWebsite. All rights reserved.</p>
+    <ul class="social-icons">
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

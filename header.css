@@ -1,0 +1,370 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Media query for screens wider than 1440px (18-inch monitor) */
+@media screen and (min-width: 1441px) {
+    /* Adjust font size for larger screens */
+    body {
+      font-size: 20px;
+      
+    }
+  
+    /* Adjust the layout for larger screens */
+    .homepage {
+      padding: 80px;
+    }
+  
+    /* Example: Adjust the number of columns for features */
+    .features {
+      flex-wrap: wrap;
+    }
+  
+    .feature {
+      flex-basis: calc(33.33% - 20px);
+    }
+  
+    /* Further adjustments for extra-large screens */
+    .homepage {
+      max-width: 1600px;
+    }
+  }
+  
+  /* Adjustments for header on larger screens */
+  .header {
+    padding: 30px;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+  }
+  
+  .header p {
+    font-size: 24px;
+  }
+  
+  .header-buttons a {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+  }
+  
+  .feature {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+  }
+  
+  /* Adjustments for CTA section on larger screens */
+  .cta h2 {
+    font-size: 36px;
+  }
+  
+  .cta p {
+    font-size: 32px;
+  }
+  
+  /* Footer adjustments for larger screens */
+  .footer-content1 p {
+    font-size: 18px;
+  }
+  
+  .footer-content2 h1 {
+    font-size: 36px;
+  }
+  
+  .right h4 {
+    font-size: 36px;
+  }
+  
+  /* Social icons size adjustments */
+  .social-icons a i {
+    width: 50px;
+    height: 50px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  body {
+    display: flex;
+  flex-direction: column;
+  background-image: url('bd2.jpg');
+  /* background-image: url('devu.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; /* Adjusted to align the background at the top */
+  margin: 0; /* Remove any default margin */
+  padding: 0;
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+  
+  
+  .header {
+    
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header h1 {
+    
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .header p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .header-buttons a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .header-buttons a:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+  }
+  .feature{
+    background-color: #000000;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 8px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .feature:hover{
+    background-color: #ffffff;
+    color: #e74c3c;
+  }
+  
+  .homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .header-33 {
+    text-align: center;
+    margin-bottom: 20px;
+                  
+    
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+    border-radius:50px;
+  }
+  
+  .header-33 h1 {
+    font-size: 36px;
+     background-color: #f2f2f2;
+     border-radius: 50px;
+   
+  }
+  .diff{
+    background-color: #f2f2f2;
+     border-radius: 30px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+    border-radius:50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+    border-radius:50px;
+  }
+  
+  .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .feature p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .feature i {
+    
+    font-size: 50px;
+                     
+   
+    
+  }
+  
+  .cta {
+    text-align: center;
+    
+  }
+  
+  .cta h2 {
+  
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+    
+  }
+  .cta p{
+    
+    font-size: 25px;
+    
+  }
+  .chew{
+    padding-top: 50px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e74c3c;
+  }
+  
+  
+  .footer {
+    background-color: #e74c3c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Push the footer to the bottom */
+    justify-content: space-between;
+  }
+  
+  .footer-content1 p {
+    margin: 0;
+    font-size: 14px;
+    padding-top: 50px;
+  }
+  .footer-content1 h1 {
+    text-align-last: left;
+    padding-left: 9px;
+  }
+  .footer-content1 h2 {
+    text-align-last: left;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-content2 {
+    margin-left: 150px;
+    text-align: left;
+  }
+  
+  .footer-content2 h1 {
+    font-size: 30px;
+  }
+  
+  .footer2 {
+    display: flex;
+    margin: 20px 20px;
+  }
+  .header-logo:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .footer-info h2 {
+    display: inline;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .social-icons a i {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+  }
+  
+  .social-icons a i:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .footer-info i {
+    margin-right: 10px;
+    padding-left: 50px;
+  }
+  
+  .right {
+    text-align: right;
+    flex: 1;
+    padding-right: 20px;
+  }
+  .right h4 {
+    font-size: 30px;
+  }
+  
+  

@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.header-buttons a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  padding: 8px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+  background-color: #ffffff;
+  color: #e74c3c;
+}
+
+.footer {
+  background-color: #e74c3c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: auto; /* Push the footer to the bottom */
+  justify-content: space-between;
+}
+
+.footer-content1 p {
+  margin: 0;
+  font-size: 14px;
+  padding-top: 50px;
+}
+.footer-content1 h1 {
+  text-align-last: left;
+  padding-left: 9px;
+}
+.footer-content1 h2 {
+  text-align-last: left;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content2 {
+  margin-left: 990px;
+  text-align: left;
+}
+
+.footer-content2 h1 {
+  font-size: 30px;
+}
+
+.footer2 {
+  display: flex;
+  margin: 20px 20px;
+}
+.header-logo:hover {
+  background-color: #ffffff;
+  color: #e74c3c;
+  transition: background-color 0.3s, color 0.3s;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.social-icons a i {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.social-icons a i:hover {
+  transform: scale(1.2);
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-info i {
+  margin-right: 10px;
+  padding-left: 50px;
+}
+.right {
+  text-align: right;
+  flex: 1;
+  padding-right: 20px;
+}
+.right h4 {
+  font-size: 30px;
+}
+

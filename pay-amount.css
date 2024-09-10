@@ -1,0 +1,136 @@
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the side navigation bar */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e74c3c;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.sidenav p{
+    color: #fff;
+    text-align: center;
+    padding-top: 500px;
+}
+
+.sidenav-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #e74c3c;
+}
+.sidenav-header2 {
+    padding: 10px;
+    text-align: center;
+    background-color: #e74c3c;
+    padding-top: 50px;
+}
+
+.sidenav h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidenav ul li:last-child {
+    border-bottom: none;
+}
+
+.sidenav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidenav a:hover {
+    background-color: #ffffff;
+  color: #e74c3c;
+}
+
+/* Style for the main content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height:40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top:50%;
+  left:50px;
+  color:#adadad;
+  transform: translatey(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top:40px;
+  left: 0%;
+  width: 100%;
+  height:2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+ 
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+ cursor: pointer;
+}
